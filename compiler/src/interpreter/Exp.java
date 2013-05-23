@@ -1,10 +1,9 @@
 package interpreter;
 /**
- * 语句类
+ * 表达式类
  * @author Administrator
  *
  */
-
-public abstract class Stm {
+public abstract class Exp {
 
 }
