@@ -15,7 +15,18 @@ import interpreter.stm.Stm;
 import interpreter.table.IntAndTable;
 import interpreter.table.Table;
 
+/**
+ * 解释器
+ * @author Administrator
+ *
+ */
 public class Interpreter {
+	/**
+	 * 解释语句
+	 * @param stm 语句
+	 * @param table 变量列表
+	 * @return
+	 */
 	public Table interpStm(Stm stm, Table table) {
 		Table tmpTable;
 		IntAndTable intAndTable;
@@ -52,6 +63,12 @@ public class Interpreter {
 		return null;
 	}
 
+	/**
+	 * 解释表达式
+	 * @param exp 表达式
+	 * @param table 变量列表
+	 * @return
+	 */
 	public IntAndTable interpExp(Exp exp, Table table) {
 		int value = 0;
 		IntAndTable intAndTableFir;
@@ -95,8 +112,11 @@ public class Interpreter {
 		return null;
 	}
 
-	/*
+	/**
 	 * 根据ID寻找变量值
+	 * @param key
+	 * @param table
+	 * @return
 	 */
 	private int lookUp(String key, Table table) {
 		while (table != null) {
@@ -108,8 +128,12 @@ public class Interpreter {
 		return 0;
 	}
 
-	/*
+	/**
 	 * 更新数据
+	 * @param id
+	 * @param value
+	 * @param table
+	 * @return
 	 */
 	private Table update(String id, int value, Table table) {
 		Table tmpTable = new Table(id, value, table);
@@ -117,6 +141,12 @@ public class Interpreter {
 		return tmpTable;
 	}
 
+	/**
+	 * 解释并打印表达式
+	 * @param exp
+	 * @param table
+	 * @return
+	 */
 	private IntAndTable interpAndPrintExp(Exp exp, Table table) {
 		IntAndTable intAndTable = interpExp(exp, table);
 		System.out.println(intAndTable.value);

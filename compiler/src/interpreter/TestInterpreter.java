@@ -11,6 +11,11 @@ import interpreter.stm.CompoundStm;
 import interpreter.stm.PrintStm;
 import interpreter.stm.Stm;
 
+/**
+ * 测试类，用于测试直线解释器
+ * @author Administrator
+ *
+ */
 public class TestInterpreter {
 
 	/**
