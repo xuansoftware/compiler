@@ -1,13 +1,19 @@
-package interpreter;
+package interpreter.table;
 /**
  * 用于解释器的表类
  * @author Administrator
  *
  */
 public class Table {
-	String id;
-	int value;
-	Table tail;
+	public String id;
+	public int value;
+	public Table tail;
+
+	public Table(String id, int value){
+		this.id = id;
+		this.value = value;
+	}
+	
 	public Table(String id, int value, Table tail){
 		this.id = id;
 		this.value = value;
