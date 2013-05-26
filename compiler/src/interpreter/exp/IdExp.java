@@ -1,4 +1,4 @@
-package interpreter;
+package interpreter.exp;
 
 public class IdExp extends Exp{
 	public String id;

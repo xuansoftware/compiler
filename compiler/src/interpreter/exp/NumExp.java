@@ -1,4 +1,4 @@
-package interpreter;
+package interpreter.exp;
 
 public class NumExp extends Exp {
 	public int num;

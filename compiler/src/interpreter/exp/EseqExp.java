@@ -1,4 +1,6 @@
-package interpreter;
+package interpreter.exp;
+
+import interpreter.stm.Stm;
 
 public class EseqExp extends Exp {
 	public Stm stm;

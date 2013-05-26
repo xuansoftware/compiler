@@ -1,4 +1,4 @@
-package interpreter;
+package interpreter.exp;
 
 public class OpExp extends Exp {
 	public Exp leftExp;
@@ -7,6 +7,7 @@ public class OpExp extends Exp {
 	public static final int Plus = 0;
 	public static final int Minus = 1;
 	public static final int Times = 2;
+	public static final int Div = 3;
 	
 	public OpExp(Exp leftExp, int oper, Exp rightExp) {
 		this.leftExp = leftExp;

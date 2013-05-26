@@ -1,5 +1,9 @@
-package interpreter;
-
+package interpreter.stm;
+/**
+ * ¸´ºÏÓï¾ä
+ * @author Administrator
+ *
+ */
 public class CompoundStm extends Stm {
 	public Stm stm1, stm2;
 	public CompoundStm(Stm s1, Stm s2){
